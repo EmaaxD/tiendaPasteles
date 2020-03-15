@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+:root {
+  --mainPink: #ef7998;
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+}
+
+body {
+  font-family: "Kaushan Script", cursive;
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+}
+
+/* Globales */
+	.btn-pink {
+		color: var(--mainPink)!important;
+		border-color: var(--mainPink)!important;
+		background: transparent!important;
+		transition: all .3s ease-in-out;
+	}
+
+	.btn-pink:hover {
+		color: var(--mainWhite)!important;
+		border-color: var(--mainPink)!important;
+		background: var(--mainPink)!important;
+	}
+
+	.btn-black {
+		color: var(--mainBlack)!important;
+		border-color: var(--mainBlack)!important;
+		transition: all .3s ease-in-out;
+	}
+
+	.btn-black:hover{
+		color: var(--mainBlack)!important;
+		border-color: var(--mainPink)!important;
+		background: var(--mainPink)!important;
+	}
+
+/* Nav Links */
+	
+	header#header {
+		width: 100%;
+		position: absolute;
+		background: transparent!important;
+		z-index: 9999;
+	}
+
+	.navbar-toggler {
+		outline: none!important;
+	}
+
+	.toggler-icon {
+		font-size: 2.5rem;
+		color: var(--mainPink);
+	}
+
+	.nav-link {
+		color: var(--mainPink);
+		transition: all .3s ease-in-out;
+		font-size: 1.4rem;
+	}
+
+	.nav-link:hover {
+		color: var(--mainBlack);
+		/*background: var(--mainPink);*/
+	}
+
+	@media (max-width: 991px){
+		.nav-link:hover {
+			color: var(--mainBlack);
+			background: var(--mainPink);
+		}
+	}
+
+	/*estilo del boton carrito*/
+	.cart-info__icon {
+		color: var(--mainBlack);
+		cursor: pointer;
+	}
+
+	.cart-info {
+		border: 0.1rem solid var(--mainBlack);
+		color: var(--mainBlack);
+		border-radius: 0.25rem;
+		padding: 0.4rem 0.6rem;
+		cursor: pointer;
+		transition: all .3s ease-in-out;
+	}
+
+	.cart-info:hover {
+		background: var(--mainPink);
+		border-radius: var(--mainPink);
+		color: var(--mainWhite);
+		border: 0.1rem solid var(--mainPink);
+		border-radius: 0.27rem;
+	}
+
+	.cart-info:hover .cart-info__icon {
+		color: var(--mainWhite);
+	}
+
+/* Banner Principal */
+
+	#home {
+		position: relative;
+	}
+
+	.max-height{
+		min-height: calc(120vh - 76px);
+		/*background: linear-gradient(var(--yellowTrans),var(--yellowTrans)), url('../img/headerBcg.jpeg');*/
+		background: url('../img/headerBcg.jpeg');
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		position: relative;
+	}	
+
+	.banner {
+		/*color: var(--mainBlack);*/
+		margin-top: -3rem;
+	}
+
+	.banner-title {
+		color: var(--mainPink);
+		font-size: 4rem;
+	}
+
+	.banner-link {
+		font-size: 1.5rem;
+		color: var(--mainBlack);
+		border-color: var(--mainBlack);
+		transition: all .3s ease-in-out;
+	}
+
+	.banner-link:hover {
+		background: var(--mainPink);
+		color: var(--mainWhite);
+		border-color: var(--mainPink);
+	}	
+
+/* Carrito */
+	.cart {
+		position: absolute;
+		min-height: 10rem;
+		background: rgba(255,255,255,0.5);
+		top: 75px;
+		right: 0;
+		transition: all 0.3s ease-in-out;
+		width: 0;
+		overflow: hidden;
+	}
+
+	.show-cart {
+		width: 20rem;
+		padding: 2rem 1.5rem;
+		transform: rotateY(-360deg);
+	}
+
+	.cart-item-remove {
+		color: var(--mainPink);
+		transition: all .3s ease-in-out;
+	}
+
+	.cart-item-remove:hover {
+		transform: scale(1.1);
+		color: var(--mianBlack);
+	}
+
+	.cart-item-price {
+		font-size: 0.8rem;
+	}	
+
+/* Sobre Nosotros*/
+
+	.about-img__container {
+		position: relative;
+	}
+
+	.about-img__container::before {
+		content: '';
+		position: absolute;
+		top: -1.5rem;
+		left: -1.7rem;
+		width: 100%;
+		height: 100%;
+		outline: 0.5rem solid var(--mainYellow);
+		z-index: -1;
+		transition: all .3s linear;
+	}
+
+	.about-img__container:hover:before {
+		top: 0;
+		left: 0;
+	}	
+
+/* Tienda */
+	
+	.store {
+		background: var(--mainGrey);
+	}
+
+	.search-box {
+		background: var(--mainPink);
+		color: var(--mainBlack);
+	}
+
+	.single-item {
+		transition: all .3s linear;
+	}
+
+	.single-item:hover {
+		box-shadow: 0px 10px 15px rgba(0,0,0,0.5);
+	}
+
+	.img-container {
+		position: relative;
+		overflow: hidden;
+		cursor: pointer;
+	}
+
+	.store-img {
+		transition: all 1s ease-in-out;
+	}
+
+	.img-container:hover .store-img{
+		transform: scale(1.2);
+	}
+
+	.store-item-icon {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding: 0.75rem;
+		background: var(--mainYellow);
+		border-top-left-radius: 1rem;
+		transition: all 1s ease-in-out;
+		transform: translate(100%,100%);
+	}
+
+	.img-container:hover .store-item-icon {
+		transform: translate(0, 0);
+	}
+
+	.store-item-icon:hover {
+		color: var(--mainWhite);
+	}	
+
+/* Nuestro Servicios*/
+	
+	.services {
+		background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/servicesBcg.jpeg')center/cover fixed no-repeat;
+		color: var(--mainWhite);
+	}
+
+	.service-title {
+		letter-spacing: 0.5rem;
+	}
+
+	.service-text {
+		word-spacing: 0.5rem;
+		font-size: 1.2rem;
+		color: var(--mainGrey);
+	}	
+
+/* Pie de pagina */
+
+	.footer-cakes {
+		background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)) ,var(--mainPink);
+	}
+
+	.footer-title{
+		color: var(--mainWhite);
+	}
+
+	.footer-text {
+		color: var(--mainWhite);
+		font-size: 1.1rem;
+	}
+
+	.footer-redes {
+		color: var(--mainWhite);
+		transition: all .3s ease-in-out;
+	}
+
+	.footer-redes:hover {
+		color: var(--mainBlack);
+	}
+
+	.footer-box-icon {
+		background: var(--mainPink);
+		color: var(--mainWhite);
+	}
+
+	.footer-input {
+		border: none;
+		border-radius: 0.25rem;
+	}
+
+	input[type='text']{
+		background: transparent!important;
+		border: 1px solid var(--mainWhite);
+		color: var(--mainWhite)!important;
+	}	
+
+	.footer-input::placeholder {
+		color: var(--mainWhite)!important;
+	}
+
+	.copy {
+		background: #ef7998;
+		padding: 1px;
+	}
+
+	.copy a {
+		color: var(--mainBlack);
+	}

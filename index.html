@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Pasteleria</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<!-- menu y banner princial -->
+	<header id="header">
+		<nav class="navbar navbar-expand-lg px-4">
+			<a href="#" class="navbar-brand">
+				<img src="img/logo.svg" alt="main icon">
+			</a>
+
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+				<span class="toggler-icon">
+					<i class="fas fa-bars"></i>
+				</span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="navbar-nav text-capitalize mx-auto text-center">
+					<li class="nav-item active">
+						<a href="#home" class="nav-link">inicio</a>
+					</li>
+					<li class="nav-item active">
+						<a href="#about" class="nav-link">sobre nosotros</a>
+					</li>
+					<li class="nav-item active">
+						<a href="#store" class="nav-link">tienda</a>
+					</li>
+					<li class="nav-item active">
+						<a href="#services" class="nav-link">servicios</a>
+					</li>
+					<li class="nav-item active">
+						<a href="#cakes" class="nav-link">ordenes</a>
+					</li>
+				</ul>
+				
+				<!-- contenedor de informacion unica -->
+				<div class="nav-info-items d-none d-lg-flex">
+					<!-- informacion unica -->
+					<div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+						<span class="info-icon mx-lg-3">
+							<i class="fas fa-phone"></i>
+						</span>
+						<p class="mb-0"> 3885477950</p>
+					</div>
+					<!-- informacion unica -->
+	
+					<div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+						<span class="cart-info__icon mr-lg-3">
+							<i class="fas fa-shopping-cart"></i>
+						</span>	
+						<p class="mb-0 text-capitalize">
+							<span id="item-count">2</span>
+							contenido - $ 
+							<span class="item-total">
+								10.49
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- fin del menu -->
+	</header>
+	<!-- fin del menu y banner principal -->
+
+	<section id="home">
+		<!-- banner principal -->
+		<div class="container-fluid">
+			<div class="row max-height justify-content-center align-items-center">
+				<div class="col-10 mx-auto banner text-center">
+					<h1 class="text-capitalize">bienvenido a <strong class="banner-title">Panesitos</strong></h1>
+
+					<a href="#store" class="btn banner-link text-uppercase my-2">explorar</a>
+				</div>
+
+				<!-- carrito -->
+				<div class="cart" id="cart">
+					<!-- un producto en el carrito -->
+					<div class="cart-item d-flex justify-content-between text-capitalize my-3">
+						<img src="img-cart/cake-2.jpeg" class="img-fluid rounded-circle" id="item-img">
+						<div class="item-text">
+							<p id="cart-item-title" class="font-weight-bold mb-0">
+								producto 1
+							</p>	
+							<span>$</span>
+							<span id="cart-item-price" class="cart-item-price mb-0">10.99</span>	
+						</div>
+
+						<a href="#" id="cart-item-remove" class="cart-item-remove">
+							<i class="fas fa-trash"></i>
+						</a>
+					</div>
+					<!-- fin de un producto en el carrito -->
+
+					<!-- un producto en el carrito -->
+					<div class="cart-item d-flex justify-content-between text-capitalize my-3">
+						<img src="img-cart/cupcake-1.jpeg" class="img-fluid rounded-circle" id="item-img">
+						<div class="item-text">
+							<p id="cart-item-title" class="font-weight-bold mb-0">
+								producto 1
+							</p>	
+							<span>$</span>
+							<span id="cart-item-price" class="cart-item-price mb-0">10.99</span>	
+						</div>
+
+						<a href="#" id="cart-item-remove" class="cart-item-remove">
+							<i class="fas fa-trash"></i>
+						</a>
+					</div>
+					<!-- fin de un producto en el carrito -->
+					
+					<!-- total -->
+					<div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+						<h5>total</h5>
+						<h5>$ <strong id="cart-total" class="font-weight-bold">10.00</strong></h5>
+					</div>
+					<!-- fin de total -->
+
+					<!-- botones del carrito -->
+					<div class="mt-4 d-flex justify-content-between">
+						<!-- eliminar productos del carrito -->
+						<a href="#" id="clear-cart" class="btn btn-black text-uppercase mr-3">limpiar carrito</a>
+						
+						<!-- confirmar todo los productos para realizar compra -->
+						<a href="#" id="clear-cart" class="btn btn-pink text-uppercase">comprar</a>
+					</div>
+					<!-- fin de los botones del carrito -->
+
+				</div>
+				<!-- fin de carrito -->
+			</div>
+		</div>
+		<!-- fin del banner principal -->
+	</section>
+
+
+
+	<!-- sobre nosotros -->
+	<section class="about py-5" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-10 mx-auto col-md-6 my-5 col-sm-12">
+					<h1 class="text-capitalize">sobre <strong class="banner-title">nosotros</strong></h1>
+					<p class="my-4 text-muted w-75">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut esse odit harum aut ea corporis, libero amet aperiam sint earum, non sunt ipsam quisquam voluptas officia culpa pariatur officiis quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, hic laborum natus provident veniam quaerat! Deleniti esse culpa tenetur debitis, iusto saepe libero, itaque veritatis explicabo ea ratione natus nobis!.
+					</p>
+					<a href="#" class="btn btn-black text-uppercase">conócenos!!!</a>
+				</div>
+
+				<div class="col-10 mx-auto col-md-6 my-5 align-self-center">
+					<div class="about-img__container">
+						<img src="img/sweets-1.jpeg" class="img-fluid" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- fin de sobre nosotros -->
+
+	<!-- tienda -->
+	<section id="store" class="store py-5">
+		<div class="container">
+			<!-- titulo de la secion -->
+			<div class="row">
+				<div class="col-12 mx-auto col-sm-6 text-center">
+					<h1 class="text-capitalize">nuestra <strong class="banner-title">tienda</strong></h1>
+				</div>
+			</div>
+			<!-- fin del titulo de la secion -->
+			
+			<!-- botones de filtro -->
+			<div class="row">
+				<div class="col-lg-8 mx-auto d-flex justify-content-around sortBtn flex-wrap">
+					<a href="#" class="btn btn-black text-uppercase fliter-btn m-2" data-filter="all">Todo</a>
+					<a href="#" class="btn btn-black text-uppercase fliter-btn m-2" data-filter="all">galletas</a>
+					<a href="#" class="btn btn-black text-uppercase fliter-btn m-2" data-filter="all">cupcakes</a>
+					<a href="#" class="btn btn-black text-uppercase fliter-btn m-2" data-filter="all">dulces</a>
+					<a href="#" class="btn btn-black text-uppercase fliter-btn m-2" data-filter="all">rosquillas</a>
+				</div>
+			</div>
+			<!-- fin de botones de filtro -->
+
+			<!-- boton de busqueda -->
+			<div class="row">
+				<div class="col-10 mx-auto col-md-6">
+					<form>
+						<!-- contenedor del input con iconos -->
+						<div class="input-group mb-3 mt-4">
+							<!-- icono del input -->
+							<div class="input-group-prepend">
+								<span class="input-group-text search-box" id="search-icon">
+									<i class="fas fa-search"></i>
+								</span>
+							</div>
+							<!-- input	 -->
+							<input type="text" class="form-control" id="search" placeholder="Que desea buscar...">
+						</div>
+						<!-- fin del contenedor del input con icono -->
+					</form>
+				</div>
+			</div>
+			<!-- fin del boton de busqueda -->
+
+			<!-- productos de la tienda -->
+			<div class="row store-items" id="store-items">
+				<!-- unico item -->
+				<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet" data-item="sweets">
+					<div class="card single-item">
+						<!-- imagen de la tarjeta -->
+						<div class="img-container">
+							<img src="img/sweets-1.jpeg" class="card-img-top store-img" alt="">
+							<span class="store-item-icon">
+								<i class="fas fa-shopping-cart"></i>
+							</span>
+						</div>
+						<!-- fin de imagen de la tarjeta -->
+
+						<!-- cuerpo de la tarjeta -->
+						<div class="card-body">
+							<div class="card-text d-flex justify-content-between text-capitalize">
+								<h5 id="store-item-name">dulce pastelito</h5>
+								<h5 class="store-items-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+							</div>
+						</div>
+						<!-- fin del cuerpo de la tarjeta -->
+					</div>
+				</div>
+				<!-- fin del unico item -->
+
+				<!-- unico item -->
+				<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet" data-item="sweets">
+					<div class="card single-item">
+						<!-- imagen de la tarjeta -->
+						<div class="img-container">
+							<img src="img/sweets-2.jpeg" class="card-img-top store-img" alt="">
+							<span class="store-item-icon">
+								<i class="fas fa-shopping-cart"></i>
+							</span>
+						</div>
+						<!-- fin de imagen de la tarjeta -->
+
+						<!-- cuerpo de la tarjeta -->
+						<div class="card-body">
+							<div class="card-text d-flex justify-content-between text-capitalize">
+								<h5 id="store-item-name">dulce pastelito</h5>
+								<h5 class="store-items-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+							</div>
+						</div>
+						<!-- fin del cuerpo de la tarjeta -->
+					</div>
+				</div>
+				<!-- fin del unico item -->
+
+				<!-- unico item -->
+				<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet" data-item="sweets">
+					<div class="card single-item">
+						<!-- imagen de la tarjeta -->
+						<div class="img-container">
+							<img src="img/sweets-3.jpeg" class="card-img-top store-img" alt="">
+							<span class="store-item-icon">
+								<i class="fas fa-shopping-cart"></i>
+							</span>
+						</div>
+						<!-- fin de imagen de la tarjeta -->
+
+						<!-- cuerpo de la tarjeta -->
+						<div class="card-body">
+							<div class="card-text d-flex justify-content-between text-capitalize">
+								<h5 id="store-item-name">dulce pastelito</h5>
+								<h5 class="store-items-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+							</div>
+						</div>
+						<!-- fin del cuerpo de la tarjeta -->
+					</div>
+				</div>
+				<!-- fin del unico item -->
+
+				<!-- unico item -->
+				<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet" data-item="sweets">
+					<div class="card single-item">
+						<!-- imagen de la tarjeta -->
+						<div class="img-container">
+							<img src="img/cake-1.jpeg" class="card-img-top store-img" alt="">
+							<span class="store-item-icon">
+								<i class="fas fa-shopping-cart"></i>
+							</span>
+						</div>
+						<!-- fin de imagen de la tarjeta -->
+
+						<!-- cuerpo de la tarjeta -->
+						<div class="card-body">
+							<div class="card-text d-flex justify-content-between text-capitalize">
+								<h5 id="store-item-name">dulce pastelito</h5>
+								<h5 class="store-items-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+							</div>
+						</div>
+						<!-- fin del cuerpo de la tarjeta -->
+					</div>
+				</div>
+				<!-- fin del unico item -->
+
+				<!-- unico item -->
+				<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet" data-item="sweets">
+					<div class="card single-item">
+						<!-- imagen de la tarjeta -->
+						<div class="img-container">
+							<img src="img/cake-2.jpeg" class="card-img-top store-img" alt="">
+							<span class="store-item-icon">
+								<i class="fas fa-shopping-cart"></i>
+							</span>
+						</div>
+						<!-- fin de imagen de la tarjeta -->
+
+						<!-- cuerpo de la tarjeta -->
+						<div class="card-body">
+							<div class="card-text d-flex justify-content-between text-capitalize">
+								<h5 id="store-item-name">dulce pastelito</h5>
+								<h5 class="store-items-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+							</div>
+						</div>
+						<!-- fin del cuerpo de la tarjeta -->
+					</div>
+				</div>
+				<!-- fin del unico item -->
+
+				<!-- unico item -->
+				<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet" data-item="sweets">
+					<div class="card single-item">
+						<!-- imagen de la tarjeta -->
+						<div class="img-container">
+							<img src="img/cake-3.jpeg" class="card-img-top store-img" alt="">
+							<span class="store-item-icon">
+								<i class="fas fa-shopping-cart"></i>
+							</span>
+						</div>
+						<!-- fin de imagen de la tarjeta -->
+
+						<!-- cuerpo de la tarjeta -->
+						<div class="card-body">
+							<div class="card-text d-flex justify-content-between text-capitalize">
+								<h5 id="store-item-name">dulce pastelito</h5>
+								<h5 class="store-items-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+							</div>
+						</div>
+						<!-- fin del cuerpo de la tarjeta -->
+					</div>
+				</div>
+				<!-- fin del unico item -->
+
+				<!-- unico item -->
+				<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet" data-item="sweets">
+					<div class="card single-item">
+						<!-- imagen de la tarjeta -->
+						<div class="img-container">
+							<img src="img/cupcake-1.jpeg" class="card-img-top store-img" alt="">
+							<span class="store-item-icon">
+								<i class="fas fa-shopping-cart"></i>
+							</span>
+						</div>
+						<!-- fin de imagen de la tarjeta -->
+
+						<!-- cuerpo de la tarjeta -->
+						<div class="card-body">
+							<div class="card-text d-flex justify-content-between text-capitalize">
+								<h5 id="store-item-name">dulce pastelito</h5>
+								<h5 class="store-items-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+							</div>
+						</div>
+						<!-- fin del cuerpo de la tarjeta -->
+					</div>
+				</div>
+				<!-- fin del unico item -->
+
+				<!-- unico item -->
+				<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet" data-item="sweets">
+					<div class="card single-item">
+						<!-- imagen de la tarjeta -->
+						<div class="img-container">
+							<img src="img/cupcake-2.jpeg" class="card-img-top store-img" alt="">
+							<span class="store-item-icon">
+								<i class="fas fa-shopping-cart"></i>
+							</span>
+						</div>
+						<!-- fin de imagen de la tarjeta -->
+
+						<!-- cuerpo de la tarjeta -->
+						<div class="card-body">
+							<div class="card-text d-flex justify-content-between text-capitalize">
+								<h5 id="store-item-name">dulce pastelito</h5>
+								<h5 class="store-items-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+							</div>
+						</div>
+						<!-- fin del cuerpo de la tarjeta -->
+					</div>
+				</div>
+				<!-- fin del unico item -->
+
+				<!-- unico item -->
+				<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet" data-item="sweets">
+					<div class="card single-item">
+						<!-- imagen de la tarjeta -->
+						<div class="img-container">
+							<img src="img/cupcake-3.jpeg" class="card-img-top store-img" alt="">
+							<span class="store-item-icon">
+								<i class="fas fa-shopping-cart"></i>
+							</span>
+						</div>
+						<!-- fin de imagen de la tarjeta -->
+
+						<!-- cuerpo de la tarjeta -->
+						<div class="card-body">
+							<div class="card-text d-flex justify-content-between text-capitalize">
+								<h5 id="store-item-name">dulce pastelito</h5>
+								<h5 class="store-items-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+							</div>
+						</div>
+						<!-- fin del cuerpo de la tarjeta -->
+					</div>
+				</div>
+				<!-- fin del unico item -->
+			</div>
+			<!-- fin de los productos de la tienda -->
+		</div>
+	</section>
+	<!-- fin de tienda -->
+
+
+	<!-- nuestro servicios -->
+	<section id="services" class="services py-5">
+		<div class="container">
+			<div class="row">
+				<!-- servicio unico -->
+				<div class="col-md-4 text-center my-3">
+					<!-- imagen del serivicio -->
+					<img src="img/bread-icon.png" alt="icono de pan calentito">
+					<!-- titulo del serivicio -->
+					<h6 class="text-uppercase my-3 service-title">pan</h6>
+					<!-- descripcion del servicio -->
+					<p class="w-75 mx-auto text-center service-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur velit maiores non aliquam laboriosam tempore dolore dolorem sunt rem quae accusamus nostrum, eum debitis asperiores labore numquam voluptas quasi similique.</p>
+				</div>
+				<!-- fin de servicio unico -->
+
+				<!-- servicio unico -->
+				<div class="col-md-4 text-center my-3">
+					<!-- imagen del serivicio -->
+					<img src="img/cupcake-icon.png" alt="icono de pan calentito">
+					<!-- titulo del serivicio -->
+					<h6 class="text-uppercase my-3 service-title">cupkate</h6>
+					<!-- descripcion del servicio -->
+					<p class="w-75 mx-auto text-center service-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur velit maiores non aliquam laboriosam tempore dolore dolorem sunt rem quae accusamus nostrum, eum debitis asperiores labore numquam voluptas quasi similique.</p>
+				</div>
+				<!-- fin de servicio unico -->
+
+				<!-- servicio unico -->
+				<div class="col-md-4 text-center my-3">
+					<!-- imagen del serivicio -->
+					<img src="img/candy-icon.png" alt="icono de pan calentito">
+					<!-- titulo del serivicio -->
+					<h6 class="text-uppercase my-3 service-title">caramelo</h6>
+					<!-- descripcion del servicio -->
+					<p class="w-75 mx-auto text-center service-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur velit maiores non aliquam laboriosam tempore dolore dolorem sunt rem quae accusamus nostrum, eum debitis asperiores labore numquam voluptas quasi similique.</p>
+				</div>
+				<!-- fin de servicio unico -->
+			</div>
+		</div>
+	</section>
+	<!-- fin de nuestro servicios -->
+
+	<!-- ordenar pasteles -->
+	<section id="cakes" class="cakes py-5">
+		<div class="container">
+			<!-- titulo unico -->
+			<div class="row">
+				<div class="col-12 mx-auto col-sm-6 text-center">
+					<h1 class="text-capitalize">los mejores <strong class="banner-title">pasteles</strong></h1>
+				</div>
+			</div>
+			<!-- fin del titulo unico -->
+
+			<div class="row">
+				<!-- unico pastel -->
+				<div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
+					<!-- titulo del pastel -->
+					<h3 class="py-3">pastel de cumpleaños</h3>
+					<!-- caracteristicas del pastel -->
+					<div class="text-muted">
+						<p class="my-3">paste de cumpleaños con nombre</p>
+						<p class="my-3">contiene tres nivel</p>
+						<p class="my-3">incluye velas de cumpleaños</p>
+						<p class="my-3">colores personalizados</p>
+						<button type="button" class="btn btn-pink text-capitalize mb-3">ordenar ahora</button>
+						<p class="text-lowercase mb-4">precio del paste<strong> $5</strong></p>
+						<img src="img/trans-cake.png" class="img-fluid" alt="pastel de cumples">
+					</div>
+				</div>
+				<!-- fin del unico pastel -->
+
+				<!-- unico pastel -->
+				<div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
+					<!-- titulo del pastel -->
+					<h3 class="py-3">pastel de cumpleaños</h3>
+					<!-- caracteristicas del pastel -->
+					<div class="text-muted">
+						<p class="my-3">paste de cumpleaños con nombre</p>
+						<p class="my-3">contiene tres nivel</p>
+						<p class="my-3">incluye velas de cumpleaños</p>
+						<p class="my-3">colores personalizados</p>
+						<button type="button" class="btn btn-pink text-capitalize mb-3">ordenar ahora</button>
+						<p class="text-lowercase mb-4">precio del paste<strong> $15</strong></p>
+						<img src="img/trans-custom.png" class="img-fluid" alt="pastel de cumples">
+					</div>
+				</div>
+				<!-- fin del unico pastel -->
+
+				<!-- unico pastel -->
+				<div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
+					<!-- titulo del pastel -->
+					<h3 class="py-3">pastel de cumpleaños</h3>
+					<!-- caracteristicas del pastel -->
+					<div class="text-muted">
+						<p class="my-3">paste de cumpleaños con nombre</p>
+						<p class="my-3">contiene tres nivel</p>
+						<p class="my-3">incluye velas de cumpleaños</p>
+						<p class="my-3">colores personalizados</p>
+						<button type="button" class="btn btn-pink text-capitalize mb-3">ordenar ahora</button>
+						<p class="text-lowercase mb-4">precio del paste<strong> $25</strong></p>
+						<img src="img/trans-wedding.png" class="img-fluid" alt="pastel de cumples">
+					</div>
+				</div>
+				<!-- fin del unico pastel -->
+			</div>
+		</div>
+	</section>
+	<!-- fin de ordenar pasteles -->
+	
+	<!-- pie de pagina -->
+	<footer class="footer-cakes py-3">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<!-- contacto por medio social -->
+				<div class="col-10 col-lg-5 col-md-6 col-sm-12 text-capitalize">
+
+					<h3 class="text-center">Siguenos en todo <strong class="footer-title">momento!!!</strong></h3>
+					<p class="footer-text text-center">siempre en constante actividad en nuestras redes sociales, no te pierdas de las ofertas y descuentos por cantidad. contamos con la mejor atencion, <span class="text-uppercase font-weight-bold">vamos por mas!!!</span></p>
+					
+					<div class="d-flex justify-content-around py-4">
+						<a href="#" class="footer-redes">
+							<i class="fab fa-facebook-square fa-lg"></i>
+						</a>
+						<a href="#" class="footer-redes">
+							<i class="fab fa-youtube fa-lg"></i>
+						</a>
+						<a href="#" class="footer-redes">
+							<i class="fab fa-instagram fa-lg"></i>
+						</a>
+						<a href="#" class="footer-redes">
+							<i class="fab fa-twitter fa-lg"></i>
+						</a>
+					</div>
+				</div>
+				<!-- fin de contacto por medio social -->
+
+				<!-- contacto por formulario -->
+				<div class="col-10 col-lg-7 col-md-6 col-sm-12 text-capitalize">
+					<h3 class="text-center">contactonos de modo <strong class="footer-title">directo!!!</strong></h3>
+
+					<form>
+						<div class="form-row d-flex justify-content-center">
+							<div class="col-12 col-lg-8">
+								<label for="nameUser" class="footer-title">nombre de usuario</label>
+								<div class="input-group mb-2">
+								    <div class="input-group-prepend">
+								      <span class="input-group-text footer-box-icon">
+								      	<i class="fas fa-user"></i>
+								      </span>
+								    </div>
+								    <input type="text" class="form-control footer-input" id="nameUser" placeholder="Ingrese su nombre">
+								</div>
+							</div>
+
+							<div class="col-12 col-lg-8">
+								<label for="email" class="footer-title">correo</label>
+								<div class="input-group mb-2">
+								    <div class="input-group-prepend">
+								      <span class="input-group-text footer-box-icon">
+								      	<i class="fas fa-at"></i>
+								      </span>
+								    </div>
+								    <input type="text" class="form-control footer-input" id="email" placeholder="Ingrese su correo">
+								</div>
+							</div>
+
+							<div class="col-12 col-lg-8">
+								<div class="form-group my-3">
+									<button type="button" class="btn btn-block btn-pink">Enviar</button>
+								</div>
+							</div>
+
+						</div>
+					</form>
+				</div>
+				<!-- fin de contacto por formulario -->
+			</div>
+		</div>
+
+	</footer>
+	<p class="text-capitalize text-center copy my-0">&copy; todos los derechos reservados <strong><a href="#" target="_blank">Emanuel Mamani</a></strong></p>
+	<!-- fin del pie de pagina -->
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
